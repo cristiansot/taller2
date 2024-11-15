@@ -1,4 +1,7 @@
 //https://developer.mozilla.org/es/docs/Web/API/Fetch_API/Using_Fetch
+
+let equipoData;
+
 fetch('./equipo.json')
   .then(function (response) {
     if (response.ok) {
@@ -9,17 +12,14 @@ fetch('./equipo.json')
     }
   })
   .then(function (data) {
-    console.log(data); 
-    if (Array.isArray(data.equipo)) {
-      data.equipo.forEach(element => {
-        console.log(element); 
-      });
-    } else {
-      console.error("El JSON no contiene un array en la propiedad 'equipo'.");
-    }
+    equipoData = data;
+    console.log(equipoData);
   })
   .catch(function (error) {
     console.log("Hubo un problema con la petición Fetch:" + error.message);
   });
 
-  
+
+equipoData.forEach(element => {
+  console.log(element);
+});
