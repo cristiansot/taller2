@@ -19,7 +19,6 @@ fetch('./equipo.json')
     console.log("Hubo un problema con la petición Fetch:" + error.message);
   });
 
-
 equipoData.forEach(element => {
   console.log(element);
 });
