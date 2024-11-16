@@ -21,21 +21,24 @@ fetch('./equipo.json')
 
     equipoData.forEach(element => {
       cardsContainer.innerHTML += `
-        <div class="card mb-5">
-          <div class="card-body">
-            <h4 class="card-title">${element.nombre}</h4>
-            <h5 class="card-title">${element.especialidad}</h5>
-            <p class="card-text">${element.resumen}</p>
+        <div class="col"> 
+          <div class="card m-1"> 
+            <img class="card-img-top" src="${element.imagen}" alt="${element.nombre}">
+            <div class="card-body">
+              <h4 class="card-title mt-1">${element.nombre}</h4>
+              <h5 class="card-title">${element.especialidad}</h5>
+              <p class="card-text">${element.resumen}</p>
+            </div>
           </div>
-        </div>`
+        </div>`;
       console.log(element);
     });
+
     let cards = document.querySelectorAll('.card');
-    console.log(cards)
+    console.log(cards);
   })
   .catch(function (error) {
     console.log("Hubo un problema con la petición Fetch:" + error.message);
   });
-
 
 

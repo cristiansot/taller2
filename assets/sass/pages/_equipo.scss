@@ -1,39 +1,15 @@
+.filtrar {
+    background-color: #ff2a6b;
+}
 .resumen {
     display: flex;
-    margin: 30px;
-    margin-top: 0px;
-    padding: 40px;
+    margin-top: 30px;
 }
 
 .equipo__titulo {
-    margin-top: -40px;
+    margin-top: 10px;
 }
 
-.equipo__medico {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    margin-top: 40px;
-}
-
-.equipo__card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.equipo__card img {
-    max-width: 80%;
-    border-radius: 20px;
-}
-
-.equipo__profesion {
-    margin-top: -15px;
-}
-
-.equipo__contenido {
-    padding: 40px;
-    margin: 20px;
-    margin-top: -30px;
+.filtrar__especialidad {
+    color: #FFF;
 }
