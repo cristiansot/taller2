@@ -5,6 +5,10 @@
 
 let equipoData;
 let cardsContainer = document.querySelector('.cards__container');
+let gastro = document.querySelector('.gastro');
+let cardio = document.querySelector('.cardio');
+let psico = document.querySelector('.psico');
+let trauma = document.querySelector('.trauma');
 
 fetch('./equipo.json')
   .then(function (response) {
@@ -33,12 +37,36 @@ fetch('./equipo.json')
         </div>`;
       console.log(element);
     });
+    
+    gastro.addEventListener("click", function () {
+      const gastroenteorologia = equipoData.filter(item => item.especialidad.toLowerCase() === "gastroentereología");
+      console.log(gastroenteorologia)
+    });
+
+    cardio.addEventListener("click", function () {
+      const cardiologia = equipoData.filter(item => item.especialidad.toLowerCase() === "cardiología");
+      console.log(cardiologia);
+    });
+
+    psico.addEventListener("click", function () {
+      const psicologia = equipoData.filter(item => item.especialidad.toLowerCase() === "psicología");
+      console.log(psicologia)
+    });
+
+    trauma.addEventListener("click", function () {
+      const traumatologia = equipoData.filter(item => item.especialidad.toLowerCase() === "traumatología");
+      console.log(traumatologia)
+    });
 
     let cards = document.querySelectorAll('.card');
     console.log(cards);
   })
   .catch(function (error) {
-    console.log("Hubo un problema con la petición Fetch:" + error.message);
+    console.log("Hubo un problema con la petición Fetch: " + error.message);
   });
 
+
+
+
+ 
 

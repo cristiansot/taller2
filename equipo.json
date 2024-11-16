@@ -2,13 +2,13 @@
   {
     "nombre": "Dr. Felipe Muñoz",
     "imagen": "assets/img/doc_01.jpg",
-    "especialidad": "Gastroenterólogo",
+    "especialidad": "Gastroentereología",
     "resumen": "El Dr. Felipe Muñoz es un gastroenterólogo altamente especializado con amplia experiencia en el diagnóstico y tratamiento de trastornos digestivos. Con un enfoque personalizado y basado en evidencia, el Dr. Muñoz se dedica a brindar atención integral a sus pacientes, ayudándolos a mejorar su calidad de vida a través de tratamientos efectivos y un seguimiento cercano."
   },
   {
     "nombre": "Dr. Leopoldo Contreras",
     "imagen": "assets/img/doc_02.jpg",
-    "especialidad": "Cardiólogo",
+    "especialidad": "Cardiología",
     "resumen": "El Dr. Leopoldo Contreras es un cardiólogo con amplia experiencia en el manejo de enfermedades cardiovasculares. Comprometido con la salud y el bienestar de sus pacientes, ofrece un enfoque integral y personalizado para el diagnóstico y tratamiento de condiciones cardíacas, utilizando las últimas tecnologías y métodos basados en evidencia para garantizar los mejores resultados."
   },
   {
@@ -20,7 +20,7 @@
   {
     "nombre": "Dr. Francisco Carrasco",
     "imagen": "assets/img/doc_04.jpg",
-    "especialidad": "Cardiólogo",
+    "especialidad": "Cardiología",
     "resumen": "El Dr. Francisco Carrasco es un cardiólogo experimentado que se especializa en el diagnóstico y tratamiento de enfermedades del corazón. Con un enfoque centrado en el paciente, el Dr. Carrasco combina su experiencia clínica con un compromiso genuino por la salud cardiovascular, brindando atención personalizada y seguimiento continuo para asegurar el bienestar de sus pacientes en cada etapa de su tratamiento."
   },
   {
