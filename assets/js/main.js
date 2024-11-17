@@ -6,7 +6,7 @@
 
 let equipoData;
 let cardsContainer = document.querySelector('.cards__container');
-let dropdownItems = document.querySelectorAll('.dropdown-item'); 
+let dropdownItems = document.querySelectorAll('.dropdown-item');
 
 fetch('./equipo.json')
   .then(function (response) {
@@ -22,14 +22,14 @@ fetch('./equipo.json')
     console.log(equipoData);
 
     function mostrarTarjetas(filtro) {
-      cardsContainer.innerHTML = '';  
+      cardsContainer.innerHTML = '';
       let filteredData;
       if (filtro === 'todos') {
         filteredData = equipoData;
       } else {
         filteredData = equipoData.filter(item => item.especialidad.toLowerCase() === filtro.toLowerCase());
       }
-      
+
       filteredData.forEach(element => {
         cardsContainer.innerHTML += `
           <div class="col"> 
@@ -49,10 +49,10 @@ fetch('./equipo.json')
 
     dropdownItems.forEach(item => {
       item.addEventListener("click", function (event) {
-        event.preventDefault();  
-        const especialidadSeleccionada = item.textContent.trim(); 
+        event.preventDefault();
+        const especialidadSeleccionada = item.textContent.trim();
         console.log("Especialidad seleccionada:", especialidadSeleccionada);
-        
+
         if (especialidadSeleccionada === "Todas las Especialidades") {
           mostrarTarjetas('todos');
         } else {
@@ -65,4 +65,4 @@ fetch('./equipo.json')
     console.log("Hubo un problema con la petición Fetch: " + error.message);
   });
 
-
+  
